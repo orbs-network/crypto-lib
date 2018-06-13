@@ -5,7 +5,7 @@ jobs:
     steps:
       - checkout
       - run: ./.circleci/setup-rngd.sh
-      - run: docker build -f Dockerfile.sdk.base -t orbs:sdk-base .
+      - run: docker build -f Dockerfile.sdk.base -t orbs:base-sdk .
       - run: docker build -f Dockerfile.sdk -t orbs:sdk .
 
 workflows:
