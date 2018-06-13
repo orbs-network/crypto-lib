@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build-linux:
+    machine: true
+    steps:
+      - checkout
+      - run: ./build.sh
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build-linux
