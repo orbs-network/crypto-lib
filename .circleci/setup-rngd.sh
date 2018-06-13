@@ -1,4 +1,4 @@
 #!/bin/bash -xe
 
-sudo apt-get update && sudo apt-get install rng-tools
-sudo rngd -o /dev/random -r /dev/urandom
+apt-get update && apt-get install -y rng-tools
+rngd -o /dev/random -r /dev/urandom

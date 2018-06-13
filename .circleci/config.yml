@@ -6,8 +6,7 @@ jobs:
     steps:
       - checkout
       - run: ./.circleci/setup-rngd.sh
-      - run: ./.circleci/setup-sdk.sh
-      - run: ./build.sh
+      - run: ./.circleci/setup-sdk.sh && ./build.sh
 
 workflows:
   version: 2
