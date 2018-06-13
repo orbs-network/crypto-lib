@@ -1,9 +1,12 @@
 version: 2
 jobs:
   build-linux:
-    machine: true
+    docker:
+      - image: circleci/android:api-28-alpha
     steps:
       - checkout
+      - run: ./.circleci/setup-cmake.sh
+      - run: ./.circleci/setup-rngd.sh
       - run: ./build.sh
 
 workflows:
