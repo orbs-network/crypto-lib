@@ -1,16 +1,4 @@
 #!/bin/bash -e
-export PROJECT_TYPE="sdk"
-export SDK_HOME="/opt"
-export GRADLE_VERSION="4.6"
-export ANDROID_TARGET_SDK="android-27"
-export ANDROID_SDK_TOOLS="3859397"
-export ANDROID_BUILD_TOOLS="build-tools-27.0.3"
-export ANDROID_NDK_VERSION="r16b"
-
-export GRADLE_HOME="${SDK_HOME}/gradle-${GRADLE_VERSION}"
-export ANDROID_HOME="${SDK_HOME}/Android/sdk"
-export ANDROID_NDK_HOME="${ANDROID_HOME}/ndk-bundle"
-
 apt-get update
 apt-get install -y git-core build-essential curl pkg-config file unzip default-jdk libboost-all-dev python-pip
 apt-get clean

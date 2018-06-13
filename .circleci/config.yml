@@ -1,12 +1,12 @@
 version: 2
 jobs:
   build-linux:
-    docker:
-      - image: debian:stretch
+    machine: true
     steps:
       - checkout
       - run: ./.circleci/setup-rngd.sh
-      - run: ./.circleci/setup-sdk.sh && ./build.sh
+      - run: docker build -f Dockerfile.sdk.base -t orbs:sdk-base
+      - run: docker build -f Dockerfile.sdk -t orbs:sdk
 
 workflows:
   version: 2
