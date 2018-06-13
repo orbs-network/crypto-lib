@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+export PATH="${GRADLE_HOME}/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/cmake/bin:${ANDROID_NDK_HOME}:${PATH}"
+
 function build_ios() {
     echo "Building for ${IOS_PLATFORM}..."
 
