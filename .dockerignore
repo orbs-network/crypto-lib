@@ -45,3 +45,5 @@ CTestTestfile.cmake
 build/
 deps/libgpg-error/libgpg-error-*
 deps/libgcrypt/libgcrypt-*
+
+artifacts/
