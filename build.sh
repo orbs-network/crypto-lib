@@ -110,3 +110,5 @@ esac
 popd
 
 ./test.sh
+
+./collect-artifacts.sh

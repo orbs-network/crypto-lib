@@ -46,4 +46,4 @@ build/
 deps/libgpg-error/libgpg-error-*
 deps/libgcrypt/libgcrypt-*
 
-artifacts
+artifacts/
