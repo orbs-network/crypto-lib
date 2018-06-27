@@ -1,0 +1,7 @@
+FROM orbs:base-sdk
+
+ADD . /opt/crypto-sdk
+
+RUN ./build.sh
+
+RUN export PLATFORM=android && ./build.sh
