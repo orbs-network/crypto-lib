@@ -1,6 +1,6 @@
-# Crypto SDK
+# Crypto Lib
 
-Crypto SDK is a cross-platform C++ library (with ANSI C exported interfaces) that implements all the necessary cryptographic functions for Orbs clients.
+Crypto Lib is a cross-platform C++ library (with ANSI C exported interfaces) that implements all the necessary cryptographic functions for Orbs clients.
 
 In order to implement some of the functionality, we have elected to use libgcrypt, since it's:
 
